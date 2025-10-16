@@ -2,8 +2,6 @@
 
 Bienvenido a ReState: una plantilla Expo + React Native pensada para explorar patrones de estado, navegación de rutas por archivos y componentes reutilizables.
 
-Este README está escrito en español y diseñado para ser claro, rápido de leer y útil tanto para desarrolladores que arrancan como para quienes quieren contribuir.
-
 ---
 
 ## ¿Qué hay en este proyecto?
@@ -68,14 +66,6 @@ npx expo start
 
 ---
 
-## ¿Cómo contribuir?
-
-1. Abre un issue si detectas bugs o tienes ideas de mejora.
-2. Haz un fork y envía un PR con una descripción clara de los cambios.
-3. Añade pruebas cuando modifies la lógica de negocio.
-
----
-
 ## Recursos y documentación útil
 
 - Expo: https://expo.dev
@@ -83,10 +73,3 @@ npx expo start
 - NativeWind (Tailwind para RN): https://www.nativewind.dev
 
 ---
-
-Si quieres, puedo:
-
-- Añadir secciones específicas (API, arquitectura, guías de estilo).
-- Crear ejemplos de componentes o tests.
-
-Indícame qué prefieres y continúo.
