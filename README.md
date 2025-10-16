@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
+## Expo + React Native (ReState) — Proyecto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bienvenido a ReState: una plantilla Expo + React Native pensada para explorar patrones de estado, navegación de rutas por archivos y componentes reutilizables.
 
-## Get started
+Este README está escrito en español y diseñado para ser claro, rápido de leer y útil tanto para desarrolladores que arrancan como para quienes quieren contribuir.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ¿Qué hay en este proyecto?
 
-2. Start the app
+- Estructura moderna basada en Expo y Router por archivos.
+- Carpetas principales: `app/` (rutas y pantallas), `components/`, `lib/`, `assets/`, `constants/`.
+- Integraciones útiles ya preparadas: tipado TypeScript, Tailwind con NativeWind, fonts e imágenes en `assets/`.
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Comenzar rápido
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1) Instalar dependencias
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2) Iniciar el servidor de desarrollo
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3) Opciones comunes (desde la interfaz de Expo):
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Abrir en Android/iOS (emulador o dispositivo físico).
+- Abrir en Expo Go para pruebas rápidas.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## Estructura clave (resumen)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `app/` — Rutas y pantallas. Usa file-based routing; revisa `_layout.tsx` en la raíz y en subcarpetas.
+- `components/` — Componentes UI reutilizables (Cards, Search, Filters, etc.).
+- `lib/` — Lógica compartida y hooks (p. ej. `useAppwrite.ts`, proveedor global, semillas de datos).
+- `assets/` — Fuentes, íconos y imágenes.
+
+---
+
+## Flujo de desarrollo recomendado
+
+1. Crear una rama con nombre claro: `feature/<descripcion>` o `fix/<descripcion>`.
+2. Mantener commits pequeños y enfocados.
+3. Añadir unit/integration tests cuando el cambio altera la lógica compartida.
+
+---
+
+## Consejos rápidos y buenas prácticas
+
+- Aprovecha el tipado TS para evitar errores en tiempo de compilación.
+- Mantén los componentes puros y divide responsabilidades (presentación vs. lógica).
+- Usa `lib/global-provider.tsx` para estado o contexto compartido en lugar de props-drilling.
+
+---
+
+## Scripts útiles (package.json)
+
+- `npm start` — alias para `expo start`.
+- `npm run ios` / `npm run android` — lanzar en emuladores si están configurados.
+- `npm run reset-project` — reponer plantilla de inicio (ver `README` original si lo necesitas).
+
+---
+
+## ¿Cómo contribuir?
+
+1. Abre un issue si detectas bugs o tienes ideas de mejora.
+2. Haz un fork y envía un PR con una descripción clara de los cambios.
+3. Añade pruebas cuando modifies la lógica de negocio.
+
+---
+
+## Recursos y documentación útil
+
+- Expo: https://expo.dev
+- React Native: https://reactnative.dev
+- NativeWind (Tailwind para RN): https://www.nativewind.dev
+
+---
+
+Si quieres, puedo:
+
+- Añadir secciones específicas (API, arquitectura, guías de estilo).
+- Crear ejemplos de componentes o tests.
+
+Indícame qué prefieres y continúo.
